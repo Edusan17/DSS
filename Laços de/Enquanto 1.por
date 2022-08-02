@@ -10,8 +10,9 @@ programa
 			leia(n)
 			se(n > 0){
 				soma += n
-				media = soma / n
 				total++
+				media = soma / total
+				
 			}	
 		}
 		escreva("\nSoma = ",soma)
@@ -24,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 216; 
+ * @POSICAO-CURSOR = 220; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
