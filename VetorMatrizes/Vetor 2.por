@@ -3,24 +3,25 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro V[10],l,ocorrencias=0,valordado,SomaP=0
-		real media=0.0,Soma=0.0
+		inteiro D[10],Somadado=0,MediaA,maiorvalor=0,y,quant=0
 
-		para(l=0;l<10;l++){
-			escreva("\nQual o numero do dado: ")
-			leia(valordado)
-			se(ocorrencias<=valordado){
-				ocorrencias = valordado
-				SomaP++
+		para(y=0;y<10;y++){
+			escreva("\nEntre com o valor do dado: ")
+			leia(D[y])
+			Somadado = D[y] + Somadado
+			se(maiorvalor<D[y]){
+				maiorvalor = D[y]
+				quant=1
 			}
-			Soma += valordado
-			V[l] += valordado
-			
+			senao se(maiorvalor==D[y]){
+				quant++
+			}
 		}
-		media = Soma/10
-		escreva("\nMedia aritmética dos lançamentos: ",media)
-		escreva("\nQuantidade de maior valor: ",SomaP)
-		escreva("\nOcorrencia da pontuação: ",ocorrencias)
+		MediaA = Somadado/10
+		escreva("\nSoma dos dados: ",Somadado)
+		escreva("\nMédia dos dados: ",MediaA)
+		escreva("\nMaior valor: ",maiorvalor)
+		escreva("\nOcorrencia de maior pontuação: ",quant)
 		
 	}
 }
@@ -29,9 +30,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 334; 
+ * @POSICAO-CURSOR = 512; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {D, 6, 10, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
