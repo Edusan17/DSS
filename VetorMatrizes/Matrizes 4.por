@@ -11,14 +11,14 @@ programa {
 					escreva ( "Digite os valores da matriz: " )
 					leia (matriz[l][c])
 					soma += matriz[l][c]
+					
 					se(c == l){
-						
+						somaDiagonal += matriz[l][c]
 					}
 				}
 				
 			}
 			
-			somaDiagonal = matriz[ 0 ][ 0 ] + matriz[ 1 ][ 1 ] + matriz[ 1 ][ 1 ]
 			
 			escreva ( "\nA soma dos números é " , soma)
 			escreva ( "\nA soma dos números da diagona é " , somaDiagonal)
@@ -32,9 +32,9 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 284; 
+ * @POSICAO-CURSOR = 354; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {matriz, 5, 10, 6};
+ * @SIMBOLOS-INSPECIONADOS = {matriz, 5, 10, 6}-{soma, 5, 23, 4}-{somaDiagonal, 5, 30, 12};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
